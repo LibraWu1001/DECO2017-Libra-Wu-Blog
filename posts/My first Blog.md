@@ -1,7 +1,7 @@
 
 ---
-title: Week6 Blog
-date: 2026-04-2
+title: First Blog
+date: 2026-04-02
 author: Libra Wu
 summary: Early thinking about what a community website needs and possible directions
 tags:
