@@ -1,6 +1,6 @@
 
 ---
-title: First Blog
+title: My First Blog
 date: 2026-04-02
 author: Libra Wu
 summary: Early thinking about what a community website needs and possible directions
