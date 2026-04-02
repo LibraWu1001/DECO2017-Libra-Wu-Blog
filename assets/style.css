@@ -3,7 +3,7 @@
 
   color-scheme: light dark;
   --light-bg: #eeeeee;
-  --light-text: #111111;
+  --light-text: #030723;
   --light-accent: #4f46e5;
   --dark-bg: #111111;
   --dark-text: #eeeeee;
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  background: white;
+  background: rgb(255, 235, 249);
   padding: 40px;
   border-radius: 12px;
   max-width: 800px;
