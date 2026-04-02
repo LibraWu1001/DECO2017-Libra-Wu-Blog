@@ -11,7 +11,7 @@
 }
 
 body {
-  background: red;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
 }
 
 main {
@@ -19,7 +19,6 @@ main {
   padding: 40px;
   border-radius: 12px;
   max-width: 800px;
-  
   margin: 40px auto;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
