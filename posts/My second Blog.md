@@ -1,4 +1,3 @@
-
 ---
 title: My Second Blog
 date: 2026-04-18
