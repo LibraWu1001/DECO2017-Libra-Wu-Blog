@@ -6,7 +6,6 @@ summary:  This stage focuses on defining the core functions of the system based 
 tags:
   - Wireframe
   - user-flow
-  - user-flow
 ---
 In this stage, our group focused on developing wireframes to represent the structure of our application. Instead of only thinking about ideas or features, we started to look at how the system is actually organised into different pages and how users move through them.
 
