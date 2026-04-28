@@ -1,5 +1,5 @@
 ---
-title: From Concept to Wireframe: Structuring the Interface
+title: From Concept to Wireframe, Structuring the Interface
 date: 2026-04-28
 author: Libra Wu
 summary:  This stage focuses on defining the core functions of the system based on the concept of anonymity and randomness. Key decisions include removing stable identity, using random room allocation, and introducing a “re-encounter” feature. The design prioritises simple interaction and reduces social pressure, while balancing continuity and anonymity.
