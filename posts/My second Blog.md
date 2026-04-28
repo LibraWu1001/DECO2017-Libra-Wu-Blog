@@ -6,7 +6,7 @@ summary:  This stage focuses on defining the core functions of the system based 
 tags:
   - ideation
   - community
-  -User Needs
+  - User Needs
 
 ---
 At this stage of the project, I started moving from just having a general idea to actually thinking about what the system needs to do. At the beginning, my idea was mainly about anonymity and randomness, but I realised that just saying these ideas is not enough. I needed to figure out what functions are required and why they are important.
