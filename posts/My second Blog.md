@@ -1,25 +1,24 @@
 ---
-title: My Second Blog
+title: From Concept to Functional Decisions in an Anonymous Community
 date: 2026-04-18
 author: Libra Wu
-summary:  Developing an anonymous and random community concept through group discussion and early user flow
+summary:  This stage focuses on defining the core functions of the system based on the concept of anonymity and randomness. Key decisions include removing stable identity, using random room allocation, and introducing a “re-encounter” feature. The design prioritises simple interaction and reduces social pressure, while balancing continuity and anonymity.
 tags:
   - ideation
   - community
-  - user-flow
+  -User Needs
+
 ---
-In this week, I started to move from general thinking to a more specific idea for my community. My initial interest was in exploring a different type of social interaction that is less based on identity and long-term relationships.
+At this stage of the project, I started moving from just having a general idea to actually thinking about what the system needs to do. At the beginning, my idea was mainly about anonymity and randomness, but I realised that just saying these ideas is not enough. I needed to figure out what functions are required and why they are important.
 
-After bringing this idea into the tutorial, we discussed it as a group and decided to develop it further. As the idea became clearer, we started to think more carefully about what kind of users this community is for, and what kind of experience it should provide.
+One of the most important decisions I made was to remove stable user identity. Instead of letting users create profiles or keep a consistent identity, the system gives them a random name every time they enter. This goes against how most social media platforms work, since those usually rely on identity, reputation, and long-term connections. I chose to avoid that because I want to create a space where people feel less pressure and are not judged based on who they are.
 
-Instead of focusing on identity, profiles, and stable relationships like most social media platforms, we are interested in users who may prefer more casual, low-pressure, and temporary interactions. These users may not want to share personal information or maintain a fixed online identity.
+Based on this idea, I defined a few core functions. The system needs to generate random identities, assign users to rooms, and support real-time chat. These are not just separate features — they all support the main experience. For example, random room assignment is important because if users can choose who to talk to, it would bring back bias and reduce the randomness.
 
-Based on this direction, we further developed a concept where users enter the platform with a random name each time. They cannot choose who to talk to, and instead they can either join a random room or create their own room. This creates a more unpredictable and spontaneous experience.
+During group discussion, we also talked about a feature called the “re-encounter indicator”. This shows when you meet someone you have talked to before, but without telling you who they are. I decided to treat this as a core feature instead of something optional. Without it, interactions would feel completely disconnected. With it, there is a small sense of continuity, which creates a middle ground between complete anonymity and stable relationships. I think this idea of “familiar strangers” is quite important to the project.
 
-However, we also realised that completely random interaction might feel meaningless. To address this, we introduced a key feature: a repeated encounter system. When two users meet again in the future, the system shows a small hint, such as “you have met this person before”. This creates a sense of familiarity without revealing identity, and becomes the core idea of our design.
+At the same time, I decided not to include more complex features like media sharing or profile customisation. We did consider them, but they would make the system more complicated and shift the focus away from interaction itself. This was a clear trade-off: I chose to keep the system simple and focused instead of making it more feature-rich.
 
-We also discussed the possibility of adding a diary or “confession” space. This allows users to express their thoughts without real-time interaction. We think this can support users who do not want to chat but still want to share something. At the same time, we decided that this should remain a secondary feature so that the system does not become too complex.
+I also started thinking about the user flow to make sure everything is actually doable. A typical user would enter the platform, get a random identity, join a room, and start chatting. Sometimes they may meet someone they have seen before. The flow is kept simple on purpose, because reducing friction is important for this kind of lightweight interaction.
 
-To better understand how this idea works, we started to map a simple user flow. The user first enters the platform and is recognised by the system. Then the system assigns a random display name. After that, the user chooses between joining a random room, creating a room, or entering the diary space. If the user joins a room, the system matches them with others and they can start chatting. During the interaction, the system checks if users have met before and shows a hint if needed.
-
-At this stage, our focus is on identifying the core feature and keeping the system simple. We are trying to balance between creating something unique and making sure it is still feasible to build. In the next step, we will further define the functional requirements and refine the user flow.
+At this stage, I am not trying to add more features. Instead, I am focusing on making sure each function supports the main idea of the project. In the next stage, I will turn these ideas into a clearer structure, including page design and system logic, and also think about issues like moderation and user responsibility in an anonymous environment.
