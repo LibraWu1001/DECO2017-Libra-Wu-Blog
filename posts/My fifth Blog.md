@@ -1,7 +1,7 @@
 ---
 title: Developing the Room Interface and User Flow
-date: 2026-02-14
-author: Your Name
+date: 2026-05-08
+author: Libra Wu
 summary: This week, we started developing *liminal* from wireframes into a working website. We focused on the main user flow, including the Welcome page, Room Selection page, room cards, and the floating “+” button for Create and Random options. We also explored a softer starry-sky visual style to better match the anonymous and transitional feeling of the project.
 
 tags:
