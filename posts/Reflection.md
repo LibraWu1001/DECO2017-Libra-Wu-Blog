@@ -5,7 +5,7 @@ author: Libra Wu
 ---
 ## Evaluation of liminal
 
-liminal is an anonymous chat room website made by our group. Users can browse rooms, create rooms, choose room backgrounds, randomly enter a room, and send text, images, and music in the chat. The idea comes from “liminal space”, which means a space that feels in-between, changing, and a little unreal. I wanted the website to feel less like a formal social platform and more like a soft, anonymous space where users can move between conversations without fully showing who they are.
+liminal is an anonymous chat room website made by our group. Users can browse rooms, create rooms, choose room backgrounds, randomly enter a room, and send text, images, and music in the chat. The idea comes from “liminal space”, which means a space that feels in-between, changing, and a little unreal. I wanted the website to feel less like a formal social platform and more like a soft, anonymous space where users can move between different conversations without fully showing who they are.
 
 This reflection evaluates how well the final prototype works, what functions were completed, what problems still exist, and how the project could be improved.
 
@@ -29,7 +29,7 @@ The Create Room page became clearer after we separated Room Name and Room Type. 
 
 For the visual style, we used a starry gradient background to make the website identity stronger. It is not a dark realistic night sky. Instead, it uses softer purple and blue colours with a dreamy feeling. This matches the name liminal better and makes the website feel calmer.
 
-However, there are still some problems. During development, the upload button, dropdowns, and input fields were not always visually consistent. Some elements used browser default styles, while others used custom CSS. This caused issues with alignment, spacing, and position. In the future, we should create a clearer UI system earlier. Accessibility also needs more work, especially colour contrast, keyboard control, screen reader support, and responsive layout.
+During development, the upload button, dropdowns, and input fields were not always visually consistent at first. Some elements used browser default styles, while others used custom CSS. Through repeated refinement, the final interface became more consistent across different pages, but this process showed me that a design system should be planned earlier. In the future, we should define standard button sizes, input heights, spacing, and label styles before building too many pages. Accessibility also needs more work, especially colour contrast, keyboard control, screen reader support, and responsive layout. Some icon buttons also rely on visual meaning, so future versions should include clearer labels or tooltips.
 
 ## Functional Requirements
 
@@ -43,9 +43,17 @@ Image and music functions also need improvement. Although media messages can be 
 
 ## Testing Observations
 
-We tested the main user flow, including entering from the Welcome page, browsing rooms, creating a room, entering a chat room, and sending messages. Room creation worked because created rooms could be saved into SQLite and stayed after refreshing. Text messages could also be stored in the database and loaded through the messages API.
+As evidence for the evaluation, we tested the main user flow and several core features:
 
-Room deletion worked after we added an owner-based deletion system, so users can only delete the rooms they created. Image and music functions partly worked because the basic functions were available, but they were affected by file size, network condition, and external API stability. Multi-device testing also partly worked. Devices on the same network could access the same backend and see the same data, but users on different networks would need deployment.
+- Room creation test: A new room was created from the Create Room page, saved into SQLite, and still appeared on the Room Selection page after refreshing the browser.
+- Room deletion test: The owner-based deletion function was tested by creating a room and deleting it from the same device. Rooms created by other users did not show the delete button.
+- Messaging test: Text messages were sent inside a chat room, stored in the database, and loaded again after refreshing the page.
+- Image message test: Image messages could be sent through the upload function, but larger files could affect loading speed.
+- Online background test: Wikimedia Commons returned image results that users could select as room backgrounds.
+- Online music test: Jamendo returned playable music results, but this feature depends on network connection and API availability.
+- Multi-device test: Two devices on the same local network could access the same running backend and share room/message data. Devices on different networks would require deployment.
+
+These tests showed that the main prototype flow worked, especially for room creation, room persistence, and basic messaging. They also showed the main technical limitations of the project: media handling depends on file size and API reliability, and real multi-network use requires deployment.
 
 ## Reflection and Future Improvements
 
